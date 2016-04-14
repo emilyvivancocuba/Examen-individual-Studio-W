@@ -1,0 +1,55 @@
+.upper{
+	text-transform: uppercase;
+}
+.capital{
+	text-transform: capitalize;
+}
+.t-trans-none{
+	text-transform: none;
+}
+.w-100{
+	width: 100%;
+}
+.w-85{
+	width: 85%;
+}
+.a-table{
+	@include border-radius(100%);
+	color: $white;
+	display: table;
+	&:hover{
+		@include border-radius(15px);
+	}
+}
+.i-centered{
+	display: table-cell;
+	vertical-align: middle;
+}
+.separador{
+	width: 42px;
+	height: 2px;
+	margin-top: 20px;
+	margin-bottom: 60px;
+}
+.black{
+	background-color: #000;
+}
+.white{
+	background-color: $white;
+}
+.text-white{
+	color: $white;
+}
+.pb-40{
+	padding-bottom: 40px;
+}
+.pl-0{
+	padding-left: 0px;
+}
+.pr-0{
+	padding-right: 0px;
+}
+.plr-0{
+	@extend .pl-0;
+	@extend .pr-0;
+}

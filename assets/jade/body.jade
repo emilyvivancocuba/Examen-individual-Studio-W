@@ -1,0 +1,44 @@
+#body.body.w-100
+	.hero.text-center.w-100
+		.hero-text
+			h1 Stand out from the crowd
+			h3 For photographer and freelancer who want to exclusively showcase their products.
+	.container
+		.we-provide
+			.row
+				+col6
+					div.img-responsive.w-100.serv-we-provide.hidden-sm.hidden-xs
+				.col-xs-12.col-sm-12.col-md-6.col-lg-6
+					h2 Services
+					h2 we provide
+					.separador.black
+					p.pb-40 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quos accusantium ab dolor at atque cum saepe tempora, ut excepturi. Modi laboriosam enim assumenda tempore molestiae voluptatibus minus. Neque, aperiam.
+					.row
+						+we-provide("PSD Template design", "assets/images/online-store15.png", "PSD Tmeplate design")
+						+we-provide("Graphics design", "assets/images/mug16.png", "Diseño gráfico")
+						+we-provide("Photography", "assets/images/photography88.png")
+	.welcome.w-100
+		.container
+			.row.welcome-row
+				+col6
+					h2.text-white Welcome to
+					h2.text-white W Studio
+					.separador.white
+					p.text-white Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aliquam, tempore harum veritatis ex quam ea assumenda sunt facere consequatur dolore eligendi atque ab repudiandae sequi dolor incidunt modi magnam sint sapiente, eaque in corporis. Exercitationem at itaque soluta incidunt reiciendis quaerat molestias sapiente ipsa consequuntur veniam vero tempora cupiditate laboriosam earum recusandae qui, odio perspiciatis optio deleniti, porro velit.
+				+col6
+					iframe(src="assets/images/video.mp4", frameborder="0", allowfullscreen class="video")
+	.team
+		.container
+			h2 Meet the team
+			.separador.black
+			+team("pic1", "Nethanel Gilroy", "Founder & CEO", "pic2", "Narek Rouben", "Marketing Director", "pic3", "Samantha Milner", "Creative Director", "pic4", "Louise Alastriona", "Ui/UX Specialist")
+	.offers
+		.container
+			h2 Our best
+			h2 Offers
+			.separador.black
+			.row.text-center
+				+offer50
+				+offer70
+				+offer50
+				+offer70

@@ -1,0 +1,52 @@
+*{
+	font-family: "Raleway", Arial;
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-family: Arial;
+}
+a{
+	text-decoration: none !important;
+	-webkit-transition: .3s;
+    transition: .3s;
+    &:hover, &:focus{
+    	color: inherit;
+    }
+}
+ul{
+	list-style: none;
+	li{
+		display: inline-block;
+	}
+}
+h2{
+	@extend .capital;
+	font-weight: 700;
+	font-size: 40px;
+}
+.botones{
+	background-color: #000;
+	color: $white;
+	font-weight: 600;
+	@extend .upper;
+	@include border-radius(0px);
+}
+
+::selection {
+    text-shadow: none;
+    background: $mostaza;
+}
+::-webkit-scrollbar{
+  width: 10px;
+	&-track-piece{
+  		background-color: #333;
+	}
+	&-button{
+  		width: 0px;
+  		height: 0px;
+	}
+	&-thumb{
+  		background-color: #237590;
+	}
+}

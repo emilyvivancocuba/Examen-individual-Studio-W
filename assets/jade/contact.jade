@@ -1,0 +1,36 @@
+#contact.contact-us.w-100
+	.container
+		h2 Contact
+		h2 Us
+		.row
+			.col-xs-12.col-sm-9.col-md-9.col-lg-9
+				.separador.black
+				.w-85
+					p We love being a web designer and we're incredibly thankful that we decided to join this industry many years ago. Contact us so we can help better.
+					form
+						input(type="text" name="name" required="required" placeholder="Name*")
+						input(type="text" name="email" required="required" placeholder="Email*")
+						input(type="text" name="phone" placeholder="Subject")
+						textarea(name="message" required="required" placeholder="Message*" rows="5")
+						button(type="submit" name="submit" class="btn btn-submit botones" value="text") Submit
+			.col-xs-12.col-sm-3.col-md-3.col-lg-3
+				.bloque-contact
+					h4 Contact Info
+					p 1455 19th St.
+					p Santa Monica, CA 90404
+				.bloque-contact
+					p
+						span Email :
+						span &nbspyourmail@yourdomain.com
+					p
+						span Phone :
+						span &nbsp+88 (0) 101 0000 000
+					p
+						span Fax :
+						span &nbsp+88 (0) 202 0000 001
+				.bloque-contact
+					h4 Connect with us
+					+connect-with-us
+					+drops("Our Company Mission", "Mission", "Vision")
+					+drops("Company Philosophy", "The world For Us", "Philosophy")
+					+drops("Company Promise", "Compromisos", "Responsabilities")

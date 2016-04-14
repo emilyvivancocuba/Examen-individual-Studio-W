@@ -1,0 +1,163 @@
+mixin col3
+	.col-xs-12.col-sm-6.col-md-3.col-lg-3
+		if block
+			block
+mixin col4
+	.col-xs-12.col-sm-12.col-md-4.col-lg-4
+		if block
+			block
+mixin col6
+	.col-xs-12.col-sm-6.col-md-6.col-lg-6
+		if block
+			block
+mixin container(title, subtitle)
+	.container
+		h2=title
+		p=subtitle
+			if block
+				block
+mixin h4-p(h4)
+	h4=h4
+	p='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem obcaecati veniam dolorum et ea adipisci libero sit nemo velit alias.'
+		if block
+			block
+mixin col4-a-img-h4-p(href, imgURL,imgALT, h4, p)
+	.col-xs-12.col-sm-4.col-md-4.col-lg-4
+		.box
+			a(href="#{href}")
+				img(src="#{imgURL}", alt="#{imgALT}")
+				h4= h4
+				p= p
+				if block
+					block
+mixin we-provide(h5, imgURL, alt)
+	.col-xs-2.col-sm-4.col-md-2.col-lg-2
+		img.img-responsive.w-100(src="#{imgURL}", alt="#{imgALT}")
+	.col-xs-10.col-sm-8.col-md-10.col-lg-10
+		h5=h5
+		p="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, praesentium architecto ex distinctio dicta molestias, odio magnam suscipit, doloremque nostrum tenetur nam veritatis, rerum placeat obcaecati quam voluptatibus officiis expedita."
+				if block
+					block
+mixin team(team_number1, name1, job1, team_number2, name2, job2, team_number3, name3, job3, team_number4, name4, job4)
+	.row
+		.col-xs-12.col-sm-6.col-md-3.col-lg-3.pr-0
+			div.team-people(class=team_number1)
+		.col-xs-12.col-sm-6.col-md-3.col-lg-3.plr-0
+			h4=name1
+			p=job1
+			p="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloremque quod illum deserunt sint necessitatibus tenetur illo voluptatem labore, consequatur adipisci."
+			include links-redes-sociales
+		.col-xs-12.col-sm-6.col-md-3.col-lg-3.plr-0
+			div.team-people(class=team_number2)
+		.col-xs-12.col-sm-6.col-md-3.col-lg-3.pl-0
+			h4=name2
+			p=job2
+			p="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloremque quod illum deserunt sint necessitatibus tenetur illo voluptatem labore, consequatur adipisci."
+			include links-redes-sociales
+	.row.text-right
+		.col-xs-12.col-sm-6.col-md-3.col-lg-3.pr-0
+			h4=name3
+			p=job3
+			p="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloremque quod illum deserunt sint necessitatibus tenetur illo voluptatem labore, consequatur adipisci."
+			include links-redes-sociales
+		.col-xs-12.col-sm-6.col-md-3.col-lg-3.plr-0
+			div.team-people(class=team_number3)
+		.col-xs-12.col-sm-6.col-md-3.col-lg-3.plr-0
+			h4=name4
+			p=job4
+			p="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloremque quod illum deserunt sint necessitatibus tenetur illo voluptatem labore, consequatur adipisci."
+			include links-redes-sociales
+		.col-xs-12.col-sm-6.col-md-3.col-lg-3.pl-0
+			div.team-people(class=team_number4)
+			if block
+				block
+mixin offer(mo, user, pages, gb, mail)
+	+col3
+		.box.bg-gray
+			.caja
+				h3 Starter
+				h2
+					span $
+					span=mo
+					span.t-trans-none /mo
+			.caja
+				.row
+					.col-md-6.border-right-gray.pr-0
+						img.img-responsive(src="assets/images/man88.png", alt="users")
+						p
+							span=user
+							span Users
+					.col-md-6.pl-0
+						img.img-responsive(src="assets/images/rectangles29.png", alt="pages")
+						p
+							span=pages
+							span Pages
+			.caja
+				.row
+					.col-md-6.border-right-gray.pr-0
+						img.img-responsive(src="assets/images/database22.png", alt="GB STORAGE")
+						p
+							span=gb
+							span Gb storage
+					.col-md-6.pl-0
+						img.img-responsive(src="assets/images/email162.png", alt="Emails")
+						p
+							span=mail
+							span Emails
+			.order.bg-black
+				p Order now
+					if block
+						block
+mixin offer50
+	+offer("50", "20", "10", "20", "100")
+		if block
+			block
+mixin offer70
+	+offer("70", "50", "30", "50", "150")
+		if block
+			block
+mixin connect-with-us
+	ul.redes
+		li: a(href="https://facebook.com/")
+			i.fa.fa-facebook
+		li: a(href="https://twitter.com/")
+			i.fa.fa-twitter
+		li: a(href="https://google-plus.com/")
+			i.fa.fa-google-plus
+		li: a(href="https://pinterest.com/")
+			i.fa.fa-pinterest
+		li: a(href="https://linkedin.com/")
+			i.fa.fa-linkedin
+		li: a(href="https://tumbler.com/")
+			i.fa.fa-tumblr
+	ul.redes
+		li: a(href="https://google.com/")
+			i.fa.fa-google
+		li: a(href="https://dribbble.com/")
+			i.fa.fa-dribbble
+		li: a(href="https://skype.com/")
+			i.fa.fa-skype
+		li: a(href="https://weibo.com/")
+			i.fa.fa-weibo
+		li: a(href="https://vk.com/")
+			i.fa.fa-vk
+		li: a(href="https://instagram.com/")
+			i.fa.fa-instagram
+mixin drops(title, first, second)
+	.dropdown
+		button.btn.dropdown-toggle(type="button" data-toggle="dropdown")
+			i.fa.fa-angle-down
+			span=title
+		ul.dropdown-menu
+			li: a(href="#")
+				i.fa.fa-search
+				h4=first
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, nihil.
+				p
+					span.italic Lorem ipsum dolor sit amet.
+			li: a(href="#")
+				i.fa.fa-envelope
+				h4=second
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, nihil.
+				p
+					span.italic Lorem ipsum dolor sit amet.

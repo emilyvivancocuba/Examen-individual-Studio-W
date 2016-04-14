@@ -1,0 +1,274 @@
+/*INICIO ESTILOS HEADER*/
+
+.navbar-brand{
+	margin-top: -30px;
+}
+.nav-studio-w{
+	background-color: $blue-hero;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+.navbar-right{
+	a{
+		color: $white;
+		@extend .upper;
+		font-weight: 500;
+	}
+}
+.nav{
+	li{
+		a{
+			&:hover, &:focus{
+				background-color: #000;
+				color: $white;
+			}
+		}
+	}
+}
+.navbar-toggle{
+	border: 1px solid $white;
+	.icon-bar{
+		background-color: $white;
+	}
+}
+
+/*INICIO ESTILOS SECCION PRINCIPAL*/
+.hero{
+	@include fullscreen(url(../../assets/images/home4.jpg));
+	background-color: rgba(0, 0, 0, .38);
+	background-blend-mode: color;
+	border-bottom: 1px solid #000;
+}
+.hero-text{
+	display: table-cell;
+	vertical-align: middle;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	color: $white;
+	h3{
+		font-weight: normal;
+    	font-size: 30px;
+    	line-height: 1.5;
+    	margin-bottom: 25px;
+    	color: #D7D7D7;
+    	width: 60%;
+    	margin: auto;
+	}
+	h1{
+		@extend .capital;
+		font-weight: 700;
+		font-size: 55px;
+		line-height: 1.5;
+		margin-bottom: 35px;
+		padding-top: 20px;
+	}
+}
+
+
+/*BODY*/
+.we-provide,
+.welcome,
+.team,
+.offers,
+.contact-us{
+	margin-top: 150px;
+}
+.serv-we-provide{
+	@include img-100(url(../../assets/images/bg3.jpg));
+	height: 100vh;
+	min-height: 550px;
+	max-height: 650px;
+	margin-top: 30px;
+}
+.we-provide{
+	h5{
+		@extend .upper;
+		font-weight: 600;
+		margin-top: 20px;
+		margin-bottom: 15px;
+	}
+	img{
+		margin-top: 40px;
+	}
+}
+.welcome{
+	@include img-100(url(../../assets/images/bg3.jpg));
+	background-color: rgba(0, 0, 0, .7);
+	background-blend-mode: color;
+	h2{
+		margin-top: 0px;
+	}
+	p{
+		width: 90%;
+	}
+}
+.welcome-row{
+	padding-top: 115px;
+	padding-bottom: 115px;
+}
+video, iframe{
+	width: 100%;
+	max-width: 100%;
+	height: 314px;
+}
+.team-people{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 100%;
+	height: 260px;
+}
+.pic1{
+	background-image: url(../../assets/images/member7.jpg);
+}
+.pic2{
+	background-image: url(../../assets/images/member8.jpg);
+}
+.pic3{
+	background-image: url(../../assets/images/member9.jpg);
+}
+.pic4{
+	background-image: url(../../assets/images/member10.jpg);
+	height: 191px;
+}
+.team{
+	h4,p,ul{
+		padding-left: 40px;
+		padding-right: 20px;
+	}
+	h4{
+		margin-top: 40px;
+	}
+}
+/*PROMOCIONES*/
+.bg-gray{
+	background-color: #F0F0F1;
+}
+
+.caja{
+	border-bottom: 1px solid #CECECE;
+	img{
+		margin: auto;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+}
+.border-right-gray{
+	border-right: 1px solid #CECECE;
+}
+
+.box{
+	padding-top: 15px;
+	h3{
+		font-size: 30px;
+		font-weight: 600;
+	}
+	h2{
+		font-size: 45px;
+		span:nth-child(3){
+			font-size: 30px;
+		}
+	}
+}
+.order{
+	@extend .upper;
+	background-color: #000;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	color: $white;
+	font-size: 18px;
+	font-weight: 600;
+	p{
+		margin: 0px;
+	}
+}
+
+/*REDES SOCIALES*/
+
+
+
+.redes{
+	li{
+		margin-left: 4px;
+		margin-right: 4px;
+	}
+	a{
+		color: #9C9C9C;
+		font-size: 18px;
+	}
+}
+/* CONTACT */
+.contact-us{
+	input, textarea{
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 30px;
+		font-size: 14px;
+		font-weight: 500;
+	}
+}
+.bloque-contact{
+	h4{
+		@extend .upper;
+		font-weight: 600;
+		margin-bottom: 25px;
+	}
+	p{
+		&:first-child{
+			margin-top: 25px;
+		}
+		&:last-child{
+			margin-bottom: 25px;
+		}
+		span{
+			&:first-child{
+				font-weight: 600;
+			}
+		}
+	}
+	.dropdown{
+		border-bottom: 1px solid #000;
+		button{
+			background-color: $white;
+			margin-bottom: 15px;
+			margin-top: 15px;
+			outline: none;
+			span{
+				margin-left: 25px;
+			}
+		}
+		i{
+			background-color: #000;
+			color: $white;
+			padding: 4px;
+		}
+		p{
+			font-size: 11px;
+		}
+	}
+}
+
+
+
+::-webkit-input-placeholder{
+	color: #BBBBC9;
+}
+
+
+/* FOOTER */
+
+footer{
+	margin-top: 60px;
+	background-color: #F0F0F1;
+	padding-top: 40px;
+	padding-bottom: 30px;
+	span{
+		text-decoration: underline;
+		a{
+			color: #000;
+			&:hover{
+				color: $mostaza;
+			}
+		}
+	}
+}
